@@ -1,0 +1,442 @@
+<! DOCTYPE html >
+< html >
+< cabeza >
+	< meta  charset = " utf-8 " >
+	< meta  name = " viewport " content = " width = device-width, initial-scale = 1, maximum-scale = 1 " />
+	< link  rel = " icono de acceso directo "   href = " imagen / icono.png " >
+	< título > Primer Previo Web </ título >
+	< script  src = " http://code.jquery.com/jquery-1.10.2.min.js " > </ script >
+	< link  rel = " stylesheet " href = " https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css " >
+	< link  rel = " stylesheet " type = " text / css " href = " javaScript / alertifyjs / css / themes / default.css " >
+< link  rel = " stylesheet " type = " text / css " href = " javaScript / alertifyjs / css / alertify.css " >
+< Enlace  rel = " hoja de estilo " href =" https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css " integridad =" SHA384-MCw98 / SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO " crossorigin =" anónimo " >
+< Guión  src = " https://code.jquery.com/jquery-3.3.1.slim.min.js " integridad =" SHA384-Q8i / X + 965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH + 8abtTE1Pi6jizo " crossorigin =" anónimo " > </ escritura >
+< Guión  src = " https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js " integridad =" SHA384-ZMP7rVo3mIykV + 2 + 9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK / l8WvCWPIPm49 " crossorigin = " anónimo " > </ script >
+< Guión  src = " https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js " integridad =" SHA384-ChfqqxuZUCnJSK3 + MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW / JmZQ5stwEULTy " crossorigin =" anónimo " > </ escritura >
+< script  src = " javaScript / jquery-3.2.1.min.js " > </ script >
+< script  src = " javaScript / alertifyjs / alertify.js " > </ script >	
+< link  rel = " stylesheet " type = " text / css " href = " css / style_index.css " >
+< style  type = " text / css " >
+	/ * # tarjeta1, # tarjeta2 {
+pantalla: bloque en línea;
+	}
+	#alquitrán{
+		pantalla: flex;
+	}
+	#navbarSupportedContent {
+		justificar-contenido: centro;
+		alineación de texto: centro;
+		flotar derecho;
+		margen izquierdo: 100px;
+	}
+	#myTab {
+		margen derecho: 100px;
+	}
+	#buscar {
+		flotar derecho;
+		alineación de texto: derecha;
+		alinear-contenido: derecha;
+		derecha: 0px;
+	} * /
+
+</ estilo >
+</ cabeza >
+< cuerpo >
+< nav  class = " navbar navbar-expand-lg navbar-light bg-light " >
+  < Una  clase = " barra de navegación de la marca " href =" # " > AMPERESTORE </ a >
+  < button  class = " navbar-toggler " type = " button " data-toggle = " collapse " data-target = " #navbarSupportedContent " aria-controls = " navbarSupportedContent " aria- extended = " false " aria-label = " Alternar navegación " >
+    < span  class = " navbar-toggler-icon " > </ span >
+  </ botón >
+
+  < div  class = " collapse navbar-collapse " id = " navbarSupportedContent " >
+    < ul  class = " navbar-nav mr-auto " >
+      < li  class = " elemento de navegación activo " >
+        < Una  clase = " nav-link " href =" # " > Quienes Somos < lapso de  clase =" SR-only " > (actual) </ envergadura > </ a >
+      </ li >
+      < li  class = " nav-item " >
+        < Una  clase = " nav-link " href =" # " > Productos </ a >
+      </ li >
+      
+      < li  class = " nav-item " >
+        < Una  clase = " nav-enlace de " datos de palanca =" modal " de datos-destino =" # exampleModal2 " href =" # " > Contacto </ a >
+      </ li >
+    </ ul >
+    < form  class = " form-inline my-2 my-lg-0 " >
+     < ul  class = " navbar-nav mr-auto " >
+      
+      < li  class = " nav-item " >
+        < Una  clase = " nav-link "   href =" # " > Iniciar Sesión </ a >
+      </ li >
+      
+      < li  class = " nav-item " >
+        < Una  clase = " nav-enlace de " datos de palanca =" modal " de datos-destino =" #exampleModal " href =" # " > Registrate </ a >
+      </ li >
+    </ ul >
+    </ formulario >
+  </ div >
+</ nav >
+
+
+    < div   id = " carouselExampleIndicators " class = " carrusel deslizante " data-ride = " carrusel " >
+  < ol  class = " carrusel-indicadores " >
+    < li  data-target = " #carouselExampleIndicators " data-slide-to = " 0 " class = " active " > </ li >
+    < li  data-target = " #carouselExampleIndicators " data-slide-to = " 1 " > </ li >
+    < li  data-target = " #carouselExampleIndicators " data-slide-to = " 2 " > </ li >
+  </ ol >
+  < div  class = " carrusel-interior " >
+    < div  class = " carrusel-elemento activo " >
+      < img  class = " d-block w-100 " id = " img " src = " imagen / icono.png " alt = " Primera diapositiva " >
+    </ div >
+    < div  class = " carrusel-elemento " >
+      < img  class = " d-block w-100 " id = " img " src = " imagen / 123.jpg " alt = " Segunda diapositiva " >
+    </ div >
+    < div  class = " carrusel-elemento " >
+      < img  class = " d-block w-100 " id = " img " src = " imagen / 321.jpg " alt = " Tercera diapositiva " >
+    </ div >
+  </ div >
+  < Una  clase = " carrusel-control-prev " href =" #carouselExampleIndicators " papel =" botón " de datos de diapositivas =" prev " >
+    < span  class = " carousel-control-prev-icon " aria-hidden = " true " > </ span >
+    < span  class = " sr-only " > Anterior </ span >
+  </ a >
+  < Una  clase = " carrusel-control-lado " href =" #carouselExampleIndicators " roles =" botón " de datos de diapositivas =" próximos " >
+    < span  class = " carrusel-control-next-icon " aria-hidden = " true " > </ span >
+    < span  class = " sr-only " > Siguiente </ span >
+  </ a >
+</ div >
+< Br >
+ < div  class = " contenedor col-12 " >
+   < div  class = " fila " >
+    < div  class = " listado col-12 " >
+      < h1  id = " list " > PRODUCTO </ h1 >
+    </ div >
+    < Br >
+    < div  class = " col-sm-3 " >
+    < div  class = " tarjeta " >
+      < div  class = " card-body " >
+        < h5  class = " card-title text-center " > < img  id = " img_obs " src = " imagen / alcanciabuena.png " > </ h5 >
+        < P  clase = " tarjeta de texto " > < etiqueta  ID =" BOOMBER " > BOOMBER JACKET AMPERIANA </ etiqueta > < br > JACKET PARA PROGRAMADOR CON ESTILO  < br > TALLAS Y COLORES DISPONIBLES < br >
+        Incluye: Q 500.00 </ p >
+        < p  class = " collapse " id = " collapseExample " >
+    Ver mas Respecto a este Articulo
+    CAZADORA TÉCNICA CON FORRO INTERIOR EFECTO PELO. CUELLO SUBIDO Y MANGA LARGA ACABADA EN PUÑO DE RIB. BOLSILLOS DE VIVO EN CADERA Y DETALLE DE BOLSILLO INTERIOR. BAJO ACABADO ELÁSTICO. CIERRE FRONTAL DE CREMALLERA EXCELENTE PARA PROGRAMADORES
+  </ p >
+        < p  class = " card-text text-right " >
+        < Un  datos-toggle = " modal " datos-target =" # exampleModal3 "   href =" # " clase =" btn btn-primaria " > añadir al carrito </ una >
+        < Una  técnica de palanca = " colapso " href =" #collapseExample " roles =" botón " aria-expandida =" falsas " aria-controls =" collapseExample " href =" # " clase =" Bot bt-éxito " > Más > > </ a >
+      </ p >
+      </ div >
+    </ div >
+  </ div >
+  < div  class = " col-sm-3 " >
+    < div  class = " tarjeta " >
+      < div  class = " card-body " >
+        < h5  class = " card-title text-center " > < img  id = " img_obs " src = " imagen / cine.jpg " > </ h5 >
+        < P  clase = " tarjeta de texto " > < etiqueta  ID =" JEANS " > JEANS SKINNY BÁSICO </ etiqueta > < br > JEANS BASICO PARA LUCIR A LA HORA DE PROGRAMAR < br > TALLAS DISPONIBLES < br >
+        Incluye: Q 200.50 </ p >
+        < p  class = " collapse " id = " collapseExample2 " >
+    Ver mas Respecto a este Articulo
+  </ p >
+        < p  class = " card-text text-right " >
+        < Un  datos-toggle = " modal " datos-target =" # exampleModal3 "   href =" # " clase =" btn btn-primaria " > añadir al carrito </ una >
+        < Una  técnica de palanca = " colapso " href =" # collapseExample2 " roles =" botón " aria-expandida =" falsas " aria-controls =" collapseExample "    href =" # " clase =" Bot bt-éxito " > Más > > </ a >
+      </ p >
+      </ div >
+    </ div >
+  </ div >
+  < div  class = " col-sm-3 " >
+    < div  class = " tarjeta " >
+      < div  class = " card-body " >
+        < h5  class = " card-title text-center " > < img  id = " img_obs " src = " imagen / cereales.jpg " > </ h5 >
+        < P  clase = " tarjeta de texto " > < etiqueta  ID =" CAZADORA " > CAZADORA COMBINADO </ etiqueta > < br > CAZADORA ACOLCHONADA PARA PROGRAMAR SIN FRIO < br > TALLAS Y COLORES DISPONIBLES < br >
+        Incluye: Q 800.00 </ p >
+        < p  class = " collapse " id = " collapseExample3 " >
+    Ver mas Respecto a este Articulo
+  </ p >
+        < p  class = " card-text text-right " >
+        < Un  datos-toggle = " modal " datos-target =" # exampleModal3 "   href =" # " clase =" btn btn-primaria " > añadir al carrito </ una >
+        < Una  técnica de palanca = " colapso " href =" # collapseExample3 " roles =" botón " aria-expandida =" falsas " aria-controls =" collapseExample " href =" # " clase =" Bot bt-éxito " > Más > > </ a >
+      </ p >
+      </ div >
+    </ div >
+  </ div >
+  < div  class = " col-sm-3 " >
+    < div  class = " tarjeta " >
+      < div  class = " card-body " >
+        < h5  class = " card-title text-center " > < img  id = " img_obs " src = " imagen / 123.jpg " > </ h5 >
+        < P  clase = " tarjeta de texto " > < etiqueta  ID =" SUDADERA " > SUDADERA OTOMAN  </ etiqueta > < br > SUDADERA OTOMAN , PARA REMPLAZAR LA QUE LE REGALASTE A TU EX  < br > TALLAS DISPONIBLES , COLOR NEGRO < br >
+        Incluye: Q 540.00 </ p >
+       < p  class = " collapse " id = " collapseExample4 " >
+    Ver mas Respecto a este Articulo
+  </ p >
+        < p  class = " card-text text-right " >
+        < Un  datos-toggle = " modal " datos-target =" # exampleModal3 "   href =" # " clase =" btn btn-primaria " > añadir al carrito </ una >
+        < Una  técnica de palanca = " colapso " href =" # collapseExample4 " roles =" botón " aria-expandida =" falsas " aria-controls =" collapseExample " href =" # " clase =" Bot bt-éxito " > Más > > </ a >
+      </ p >
+      </ div >
+    </ div >
+  </ div >
+  < div  class = " col-sm-3 " >
+    < div  class = " tarjeta " >
+      < div  class = " card-body " >
+        < h5  class = " card-title text-center " > < img  id = " img_obs " src = " imagen / bobina.jpg " > </ h5 >
+        < P  clase = " tarjeta de texto " > < etiqueta  ID =" CAMISA " > C </ etiqueta > < br > CAMISA ESTAMPADO COMBINADO  < br > CAMISA ESTAMPADO , PROGRAMANDO AL ESTILO DE JUTIAPA  < br >TALLAS Y COLORES DISPONIBLES  < br >
+        Incluye: Q 350.00 </ p >
+   < p  class = " collapse " id = " collapseExample5 " >
+    Ver mas Respecto a este Articulo
+  </ p >
+        < p  class = " card-text text-right " >
+        < Un  datos-toggle = " modal " datos-target =" # exampleModal3 "   href =" # " clase =" btn btn-primaria " > añadir al carrito </ una >
+        < Una  técnica de palanca = " colapso " href =" # collapseExample5 " roles =" botón " aria-expandida =" falsas " aria-controls =" collapseExample " href =" # " clase =" Bot bt-éxito " > Más > > </ a >
+      </ p >
+      </ div >
+    </ div >
+  </ div >
+  < div  class = " col-sm-3 " >
+    < div  class = " tarjeta " >
+      < div  class = " card-body " >
+        < h5  class = " card-title text-center " > < img  id = " img_obs " src = " imagen / 1000.png " > </ h5 >
+        < P  clase = " tarjeta de texto " > < etiqueta  ID =" PARKA " > PARKA  </ etiqueta > < br > PARKA ACOLCHADA PARA MATAR EL FRIO DE SAN LUCAS < br > TALLAS Y ESTILOS DISPONIBLES,COLOR VERDE  < br >
+        Incluye: Q 970.00 </ p >
+        < p  class = " collapse " id = " collapseExample6 " >
+    Ver mas Respecto a este Articulo
+  </ p >
+        < p  class = " card-text text-right " >
+        < Un  datos-toggle = " modal " datos-target =" # exampleModal3 "   href =" # " clase =" btn btn-primaria " > añadir al carrito </ una >
+        < Una  técnica de palanca = " colapso " href =" # collapseExample6 " roles =" botón " aria-expandida =" falsas " aria-controls =" collapseExample " href =" # " clase =" Bot bt-éxito " > Más > > </ a >
+      </ p >
+      </ div >
+    </ div >
+  </ div >
+  < div  class = " col-sm-3 " >
+    < div  class = " tarjeta " >
+      < div  class = " card-body " >
+        < h5  class = " card-title text-center " > < img  id = " img_obs " src = " imagen / 500.png " > </ h5 >
+        < P  clase = " tarjeta de texto " > < etiqueta  ID =" POLO " > POLO PUNTO  </ etiqueta > < br > POLO PUNTO VISTE BIEN PROGRAMA BIEN  < br > TALLAS Y COLORES DISPONIBLES  < br >
+        Incluye: Q 500.00 </ p >
+        < p  class = " collapse " id = " collapseExample7 " >
+    Ver mas Respecto a este Articulo
+  </ p >
+        < p  class = " card-text text-right " >
+        < Un  datos-toggle = " modal " datos-target =" # exampleModal3 "   href =" # " clase =" btn btn-primaria " > añadir al carrito </ una >
+        < Una  técnica de palanca = " colapso " href =" # collapseExample7 " roles =" botón " aria-expandida =" falsas " aria-controls =" collapseExample " href =" # " clase =" Bot bt-éxito " > Más > > </ a >
+      </ p >
+      </ div >
+    </ div >
+  </ div >
+  < div  class = " col-sm-3 " >
+    < div  class = " tarjeta " >
+      < div  class = " card-body " >
+        < h5  class = " card-title text-center " > < img  id = " img_obs " src = " imagen / canino.jpg " > </ h5 >
+        < P  clase = " tarjeta de texto " > < etiqueta  ID =" CADENA " > CADENA COLGANTE LIMITED EDITION </ etiqueta > < br > CADENA LIMITED EDITION EL ESTILO DEL PROGRAMADOR ES UNICO < br > DISPONIBLE < br >
+        Incluye: Q 200.00 </ p >
+        < p  class = " collapse " id = " collapseExample8 " >
+    Ver mas Respecto a este Articulo
+  </ p >
+        < p  class = " card-text text-right " >
+        < Un  datos-toggle = " modal " datos-target =" # exampleModal3 "   href =" # " clase =" btn btn-primaria " > añadir al carrito </ una >
+        < Una  técnica de palanca = " colapso " href =" # collapseExample8 " roles =" botón " aria-expandida =" falsas " aria-controls =" collapseExample " href =" # " clase =" Bot bt-éxito " > Más > > </ a >
+      </ p >
+      </ div >
+    </ div >
+  </ div >
+   </ div >
+ </ div >
+
+    < div  class = " modal fade " id = " exampleModal " tabindex = " -1 " role = " dialog " aria-labelledby = " exampleModalLabel " aria-hidden = " true " >
+  < div  class = " modal-dialog " role = " document " >
+    < div  class = " modal-content " >
+      < div  class = " modal-header " >
+        < h5  class = " modal-title " id = " exampleModalLabel " > Registro de Clientes </ h5 >
+        < button  type = " button " class = " close " data-dispats = " modal " aria-label = " Cerrar " >
+          < span  aria-hidden = " true " > & veces; </ span >
+        </ botón >
+      </ div >
+      < div  class = " modal-body " >
+        < h6 > Nombre completo </ h6 >
+        < div  class = " input-group mb-3 " >
+
+  < div  class = " input-group-prepend " >
+    
+    < span  class = " input-group-text " id = " basic-addon1 " > < i  class = " fa fa-user " > </ i > </ span >
+  </ div >
+  < input  type = " text " class = " form-control " id = " completo " placeholder = " Nombres Apellidos " aria-label = " Username " aria-describedby = " basic-addon1 " >
+</ div >
+< h6 > Dirección </ h6 >
+< div  class = " input-group mb-3 " >
+  < div  class = " input-group-prepend " >
+  
+    < span  class = " input-group-text " id = " basic-addon1 " > < i  class = " fa fa-home " > </ i > </ span >
+  </ div >
+  < input  type = " text " class = " form-control " id = " dir " placeholder = " Av 17 N 3-35 " aria-label = " Nombre de usuario " aria-describedby = " basic-addon1 " >
+</ div >
+< h6 > Correo electrónico </ h6 >
+< div  class = " input-group mb-3 " >
+  < div  class = " input-group-prepend " >
+    
+    < span  class = " input-group-text "   id = " basic-addon1 " > < i  class = " fa fa-sobre " > </ i > </ span >
+  </ div >
+  < input  type = " email " id = " email " class = " form-control " placeholder = " Correo Electrónico " aria-label = " Nombre de usuario " aria-describedby = " basic-addon1 " >
+</ div >
+< h6 > Telefono </ h6 >
+< div  class = " input-group mb-3 " >
+  < div  class = " input-group-prepend " >
+    
+    < span  class = " input-group-text "   id = " basic-addon1 " > < i  class = " fa fa-phone " > </ i > </ span >
+  </ div >
+  < input  type = " text " id = " tel " class = " form-control " placeholder = " 3157876185 " aria-label = " Username " aria-describedby = " basic-addon1 " >
+</ div >
+< h6 > Contraseña </ h6 >
+< div  class = " input-group mb-3 " >
+  < div  class = " input-group-prepend " >
+    
+    < span  class = " input-group-text " id = " basic-addon1 " > < i  class = " fa fa-lock " > </ i > </ span >
+  </ div >
+  < input  type = " contraseña " minlength = " 6 " id = " pass1 "   class = " form-control " placeholder = " Contraseña " aria-label = " Nombre de usuario " aria-describedby = " basic-addon1 " >
+  < input  type = " contraseña " minlength = " 6 id = " pass2 "class =" form-control " placeholder =" Confirmación " aria-label =" Nombre de usuario " aria-describedby =" basic-addon1 " >
+ 
+</ div >
+ < h6  id = " min " > Mínimo 6 Caracteres </ h6 >
+      </ div >
+      < div  id = " boton " class = " modal-footer text-left " >
+        
+        < Entrada  tipo = " submit " valor =" Registrarse " ID =" registrador " clase =" btn btn-primarios " datos descartan =" modal " />
+      </ div >
+    </ div >
+  </ div >
+</ div >
+
+ < div  class = " modal fade " id = " exampleModal2 " tabindex = " -1 " role = " dialog " aria-labelledby = " exampleModalLabel " aria-hidden = " true " >
+  < div  class = " modal-dialog " role = " document " >
+    < div  class = " modal-content " >
+      < div  class = " modal-header " >
+        < h5  class = " modal-title " id = " exampleModalLabel " > Contacto de Clientes </ h5 >
+        < button  type = " button " class = " close " data-dispats = " modal " aria-label = " Cerrar " >
+          < span  aria-hidden = " true " > & veces; </ span >
+        </ botón >
+      </ div >
+      < div  class = " modal-body " >
+        < div  class = " alerta alerta-alerta primaria-desvanecimiento descartable mostrar texto-izquierda " role = " alerta " >
+  < fuerte > ¡Información! </ strong > Si tienes alguna pregunta no dudes en contactarnos o visitanos en el colegio tecnologico industrial andre ampere . Estaremos atentos a responder cualquier inquietud que tengas.
+  < button  type = " button " class = " close " data-dispats = " alert " aria-label = " Close " >
+    < span  aria-hidden = " true " > & veces; </ span >
+  </ botón >
+</ div >
+        < h6 > Nombre completo </ h6 >
+        < div  class = " input-group mb-3 " >
+
+  < div  class = " input-group-prepend " >
+    
+    < span  class = " input-group-text " id = " basic-addon1 " > < i  class = " fa fa-user " > </ i > </ span >
+  </ div >
+  < input  type = " text " id = " nombre " class = " form-control " placeholder = " Nombres Apellidos " aria-label = " Nombre de usuario " aria-describedby = " basic-addon1 " >
+</ div >
+< h6 > Correo electrónico </ h6 >
+< div  class = " input-group mb-3 " >
+  < div  class = " input-group-prepend " >
+    
+    < span  class = " input-group-text " id = " basic-addon1 " > < i  class = " fa fa-sobre " > </ i > </ span >
+  </ div >
+  < input  type = " email " id = " mail " class = " form-control " placeholder = " Correo Electrónico " aria-label = " Nombre de usuario " aria-describedby = " basic-addon1 " >
+</ div >
+< h6 > Mensaje </ h6 >
+< div  class = " grupo de entrada " >
+
+  < textarea  class = " form-control " id = " campo " aria-label = " Con textarea " > </ textarea >
+</ div >
+
+ 
+      </ div >
+      < div  id = " boton " class = " modal-footer text-left " >
+        
+        < input  type = " submit " value = " Contactar " id = " contactar " class = " btn btn-primary " data-dispats = " modal " />
+      </ div >
+    </ div >
+  </ div >
+</ div >
+
+< div  class = " modal fade col-12 " id = " exampleModal3 " tabindex = " -1 " role = " dialog " aria-labelledby = " exampleModalLabel " aria-hidden = " true " >
+  < div  class = " modal-dialog " role = " document " >
+    < div  class = " modal-content col-12 " >
+      < div  class = " modal-header " >
+        < h5  class = " modal-title " id = " exampleModalLabel " > Detalles del Producto </ h5 >
+        < button  type = " button " class = " close " data-dispats = " modal " aria-label = " Cerrar " >
+          < span  aria-hidden = " true " > & veces; </ span >
+        </ botón >
+      </ div >
+      < div  class = " modal-body col-12 " id = " cuerpo " >
+        < div  class = " col-sm-6 " >
+          < img  id = " img_detalle " src = " imagen / alcanciabuena.png " >
+        </ div >
+        < div  class = " col-sm-6 text-left " >
+         < p >
+          < I  clase = " icono de fa fa-cheque cuadrados o " > </ i > prenda:BOOMBER JACKET AMPERIANA < br >
+           < I  clase = " icono de fa fa-cheque cuadrados o " > </ i > FORRO INTERIOR EFECTO PELO < br >
+           < I  clase = " icono de fa fa-cheque cuadrados o " > </ i > talla:XL < br >
+           < I  clase = " icono de fa fa-cheque cuadrados o " > </ i > color negro mate  < br >
+           < I  clase = " icono de fa fa-cheque cuadrados o " > </ i > botones en color negro < br >
+           < I  clase = " icono de fa fa-cheque cuadrados o " > </ i > cierre matal brillante < br >
+           < I  clase = " icono de fa fa-cheque cuadrados o " > </ i > reversible < br >
+           < I  clase = " icono de fa fa-cheque cuadrados o " > </ i > cantidad:2 < br >
+           Valor: Q 500.00 < br >
+         </ p >
+        </ div >
+ 
+      </ div >
+      < div  id = " boton " class = " modal-footer text-left " >
+        < input  type = " submit " value = " Volver " id = " añadir al Carrito " class = " btn btn-primary " data-dispats = " modal " />
+        < input  type = " submit " value = " Añadri al Carrito " id = "" class = " btn btn-primary " data-dispats = " modal " />
+      </ div >
+    </ div >
+  </ div >
+</ div >
+
+
+ < footer  class = " footer " >
+        < div  id = " cont "   class = " contenedor col-12 " >
+          < div  class = " fila " >
+           < div   class = " col-sm-12 text-center " >
+            < h2  id = " titulo " > ¿Cómo Comprar en AMPERESTORE? </ h2 >
+           </ div >
+           < div  class = " col-sm-4 text-center " >
+            < img  id = " img_footer " src = " imagen / canino.jpg " >
+            < p  id = " mensajito " > 1. ESCOGE LA PRENDA QUE MAS TE GUSTA 
+            </ p >
+           </ div >
+           < div  class = " col-sm-4 text-center " >
+             < img  id = " img_footer " src = " imagen / icono.png " >
+             < p  id = " mensajito " > 2. ESCOGE TU FORMA DE PAGO 
+            </ p >
+           </ div >
+           < div  class = " col-sm-4 text-center " >
+             < img  id = " img_footer " src = " imagen / 1000.png " >
+             < p  id = " mensajito " > 3. APERESTORE HACE LLEGAR TU PRENDA GRATIS A TU CASA SI ERES PROGRAMADOR 
+            </ p >
+           </ div >
+         </ div >
+        </ div >
+        < div  id = " cont2 "   class = " contenedor col-12 " >
+          < div  class = " fila " >
+           < div   class = " col-sm-12 text-left " >
+            < h2  id = " titulo2 " > UN POCO DE NOSOTROS  </ h2 >
+         </ div >
+          < div  class = " col-sm-6 text-left " >
+            
+            < p  id = " mensajito2 " > AMPERESTORE ES LA TIENDA EN LINEA MAS IMPORTANTE DEL PAIS Y LLEVANDO ESTILO Y COMODIDAD A SUS CLIENTES DESDE EL 2004 CREADA POR EL ESTUDIANTE DANIEL RODAS DE 5TO BACHILLERATO PLAN FIN DE SEMANA PARA EL PROYECTO DE LA CLASE DE PROGRAMACION 
+            </ p >
+           </ div >
+           < div  class = " col-sm-3 text-center " >
+             < img  id = " img_footer2 " src = " imagen / icono.png " >
+             < p  id = " mensajito " > 2. ESCOGE TU FORMA DE PAGO
+            </ p >
+           </ div >
+           < div  class = " col-sm-3 text-center " >
+             < img  id = " img_footer2 " src = " imagen / 1000.png " >
+             < p  id = " mensajito " > 3. AMPERESTORE HACE LLEGAR TU PRENDA GRATIS A TU CASA SI ERES PGROGRAMADOR 
+            </ p >
+           </ div >
+        </ div >
+    </ pie de página >
+
+ < script  src = " js / indexjs.js " > </ script >
+</ cuerpo >
+</ html >
